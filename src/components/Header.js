@@ -5,7 +5,7 @@ const Header = () => {
     return (
         <header>
             <div id="fixed" className="inner">
-                <div class="logo">
+                <div className="logo">
                     <a href="#">
                         <svg viewBox="0 0 202.15 184.39">
                             <defs>

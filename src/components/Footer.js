@@ -1,7 +1,7 @@
 const Footer = () => {
     return (
         <footer>
-            <div class="inner">
+            <div className="inner">
                 <small>© Copyright Web Design by Kuku</small>
             </div>
         </footer>
