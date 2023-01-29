@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
 
-const Section = (props) => {
+const Loading = (props) => {
     const [ data, setData ] = useState({...props});
 
     useEffect(() => {
-        console.log("Section component", props, data);
+        console.log("Loading component", props, data);
     }, []);
 
     return (
@@ -12,8 +12,7 @@ const Section = (props) => {
             <section>
                 <div className="section">
                     <div className="inner">
-                        <h1>{ data.header }</h1>
-                        <p>{ data.description }</p>
+                        <h1> Loading </h1>
                     </div>
                 </div>
             </section>
@@ -21,4 +20,4 @@ const Section = (props) => {
     )
 }
 
-export default Section;
+export default Loading;
