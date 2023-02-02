@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-const Loading = (props) => {
+const Loading = (props:any) => {
     const [ data, setData ] = useState({...props});
 
     useEffect(() => {

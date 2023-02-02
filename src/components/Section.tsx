@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
+import SectionProps from "./interface/index"
 
-const Section = (props) => {
+const Section = (props:SectionProps) => {
     const [ data, setData ] = useState({...props});
 
     useEffect(() => {

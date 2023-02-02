@@ -12,16 +12,18 @@ const AboutUs = () => {
 	});
 
 	useEffect(() => {
-		setTimeout(() => {
+		const fetchAbout = async () => {
+			const res = await fetch("https://jsonplaceholder.typicode.com/posts/5");
+			const data = await res.json();
+			return { header: data.title, description: data.body };
+		}
+
+		fetchAbout().then((i) => {
 			if(loading) {
-				setLoading(false);
-				setData({ 
-					description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod provident eos rerum blanditiis tempore quo nihil cum ullam optio consequatur facilis, temporibus nobis vero, nam! Necessitatibus, maxime explicabo quae omnis!",
-					header: "Hello"
-				});
+				setLoading(false)
+				setData(i)
 			}
-		}, 3000)
-		console.log("Did mount");
+		});
 	}, []);
 
 	return (
