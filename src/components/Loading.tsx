@@ -12,7 +12,7 @@ const Loading = (props:any) => {
             <section>
                 <div className="section">
                     <div className="inner">
-                        <h1> Loading </h1>
+                        <img src="/images/loading.gif" alt="loading" className="loading"/>
                     </div>
                 </div>
             </section>

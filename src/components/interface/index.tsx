@@ -1,6 +1,4 @@
-interface SectionProps {
-    header: string;
-    description: string;
-}
+import SectionProps from "./SectionProps";
+import NewsInterface from "./NewsInterface";
 
-export default SectionProps;
+export { SectionProps, NewsInterface } ;

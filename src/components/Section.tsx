@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import SectionProps from "./interface/index"
+import { SectionProps } from "./interface/index"
 
 const Section = (props:SectionProps) => {
     const [ data, setData ] = useState({...props});
