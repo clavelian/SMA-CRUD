@@ -18,18 +18,19 @@ const News = () => {
 		if(!loading) {
 			let ul = document.getElementById("newsList")!;
 			newsData.forEach((v, i) => {
-				ul.innerHTML += `<li><span className="date">${v.date}</span><p className="title">${v.title}</p></li>`;
+				let css = (i==newsData.length - 1) ? "p-10 mb-10" : "p-10"
+				ul.innerHTML += `<li class="${css}"><div class="p-30"><span class="date">${v.date}</span><p class="title">${v.title}</p></div></li>`;
 			});
 		}
 	}, [loading]);
 
 	return (
 		<>
-			<section id="news">
-			    <div className="inner">
-			        <h1>WHAT'S NEW</h1>
+			<section className="container mx-auto">
+			    <div className="w-1/2 mx-auto">
+			        <h1 className="text-center title">WHAT'S NEW</h1>
 			        {
-			        	loading ? <Loading /> : <ul className="newslist" id="newsList"></ul>
+			        	loading ? <Loading /> : <ul id="newsList"></ul>
 			        }
 			
 			    </div>

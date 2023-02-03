@@ -1,10 +1,7 @@
-import './css/reset.css';
-import './css/style.css';
 
 const App = () => {
   return (
-    <div className="App">
-    </div>
+    <div className="App"></div>
   );
 }
 

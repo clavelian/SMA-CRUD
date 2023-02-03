@@ -9,14 +9,10 @@ const Section = (props:SectionProps) => {
     }, []);
 
     return (
-        <section>
-            <section>
-                <div className="section">
-                    <div className="inner">
-                        <h1>{ data.header }</h1>
-                        <p>{ data.description }</p>
-                    </div>
-                </div>
+        <section className="container mx-auto">
+            <section className="max-w-screen-md mx-auto py-10">
+                <h1 className="title text-center">{ data.header }</h1>
+                <p className="mb-20">{ data.description }</p>
             </section>
         </section>
     )

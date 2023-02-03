@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
     font-family: Avenir ,"ü‡ÉSÉVÉbÉN", "Yu Gothic","Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", "ÉÅÉCÉäÉI", Meiryo, "ÇlÇr ÉSÉVÉbÉN", sans-serif;
     font-size: 15px;
@@ -5,11 +9,6 @@ body {
     letter-spacing: 0.05em;
     word-wrap: break-word;
     overflow-wrap: break-word;
-}
-
-.loading {
-    width: 32px;
-    height: 32px;
 }
 
 h1, h2, h3, h4{
@@ -29,12 +28,6 @@ a {
 }
 
 .container {}
-
-.logo svg{
-    width: 75px;
-    height: 40%;
-    vertical-align: center;
-}
 
 .inner {
     margin: 0 auto;
@@ -149,7 +142,7 @@ header + section {
     text-align: center;
 }
 
-#about .desc .inner h1:after{
+h1:after{
     content:' '; 
     display: block;
     width:62px;
@@ -158,28 +151,7 @@ header + section {
     background: white;
 }
 
-
-#about .desc .inner p {
-    margin-bottom: 20px;
-}
-
-
-#about .desc .inner .btn{
-    border: 1px solid white;
-    color: white;
-}
-
-#about .inner a.btn:hover{
-    border: 1px solid white;
-    color: #ff7b26;
-    background: white;
-}
-
-#news .inner {
-    width: 100%;
-    max-width: 800px;
-}
-#news h1:after{
+h1.title:after{
     content:' '; 
     display: block;
     width:62px;
@@ -188,29 +160,28 @@ header + section {
     background: #202123;
 }
 
-.newslist li:first-child{
+#newsList li:first-child{
     border-top: 1px solid #d8d8d8;
 }
 
-.newslist li {
+#newsList li {
     border-bottom: 1px solid #d8d8d8;
-    padding: 30px;
     text-align: left;
 }
 
-.newslist li:hover {
+#newsList li:hover {
     background: #f7f7f7;
     cursor: pointer;
 }
-.newslist li:hover p.title{
+#newsList li:hover p.title{
     color: #f0669d;
 }
 
-.newslist li span.date{
+#newsList li span.date{
     color: #afafaf;
 }
 
-.newslist li span.title{
+#newsList li span.title{
     color: #afafaf;
 }
 

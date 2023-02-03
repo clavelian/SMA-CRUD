@@ -6,7 +6,7 @@ const Header = () => {
             <div id="fixed" className="inner">
                 <div className="logo">
                     <a href="#">
-                        <svg viewBox="0 0 202.15 184.39">
+                        <svg viewBox="0 0 202.15 184.39" className="w-20 mx-auto mb-3">
                             <defs>
                                 <radialGradient id="radial-gradient" cx="95.77" cy="97.77" fx="76.36006384576115" r="90.67" gradientUnits="userSpaceOnUse">
                                     <stop offset="0" stopColor="#fcc89a"></stop>

@@ -9,10 +9,12 @@ const Loading = (props:any) => {
 
     return (
         <section>
-            <section>
-                <div className="section">
-                    <div className="inner">
-                        <img src="/images/loading.gif" alt="loading" className="loading"/>
+            <section className="my-10">
+                <div>
+                    <div className="grid w-800 place-items-center">
+                        <div className="w-12">
+                            <img src="/images/loading.gif" alt="loading" />
+                        </div>
                     </div>
                 </div>
             </section>
